@@ -46,7 +46,7 @@ if not "valid_inputs_received" in st.session_state:
 st.write("")
 st.markdown(
     """
-Welcome to the Hate Speech Detection app! This tool leverages deep learning to identify hate speech in text inputs, helping to detect and prevent abusive or harmful language in online communications. Using an **LSTM-based model**, this app can classify input text as **"hate speech"** , **"Offensive Language"** or **"Neither"** with high accuracy.
+Welcome to the Hate Speech Detection app! This tool leverages deep learning to identify hate speech in text inputs, helping to detect and prevent abusive or harmful language in online communications. Using an **LSTM-based model**, this app can classify input text as :orange[**"hate speech"**] , :orange[**"Offensive Language"**] or :orange[**"Neither"**] with high accuracy.
 
 #### **Simply enter any text to analyze, and the model will provide a classification result.**
 
@@ -156,6 +156,6 @@ with st.form(key="my_form"):
             st.success(classes[predicted_class])
         else:
             st.warning(classes[predicted_class])
-        st.markdown("### Confidence = "+str(prediction_confidence))
+        st.markdown("### :blue[Confidence] = "+str(prediction_confidence))
 
 
