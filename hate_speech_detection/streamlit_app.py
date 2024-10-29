@@ -26,7 +26,7 @@ classes = {
 
 ###########
 st.set_page_config(
-    layout="centered", page_title="Hate Speech Detection", page_icon="❄️"
+    layout="wide", page_title="Hate Speech Detection", page_icon="❄️"
 )
 
 
