@@ -103,8 +103,8 @@ with st.form(key="my_form"):
     # Tokenizer
     # Load the tokenizer
     import os
-    st.write(os.path())
-    with open('./pickle/tokenizer.pkl', 'rb') as f:
+    
+    with open('/mount/src/hate_speech_detection/hate_speech_detection/pickle/tokenizer.pkl', 'rb') as f:
         tokenizer = pickle.load(f)
 
     # Convert text to sequences
@@ -112,7 +112,7 @@ with st.form(key="my_form"):
 
     # Pad sequences for uniform length
     text_padded = pad_sequences(text_seq, maxlen=max_len)
-    model = tf.keras.models.load_model('./pickle/model.keras')
+    model = tf.keras.models.load_model('/mount/src/hate_speech_detection/hate_speech_detection/pickle/model.keras')
     # Get prediction
     prediction = model.predict(text_padded)
     # Return the class with the highest probability
