@@ -6,6 +6,7 @@ from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer
 
 # Tensorflow imports to build the model.
+import nltk
 import tensorflow as tf
 from keras.utils import pad_sequences
 
