@@ -9,9 +9,9 @@ from nltk.stem import WordNetLemmatizer
 import tensorflow as tf
 from keras.utils import pad_sequences
 
-# nltk.download('stopwords')
-# nltk.download('omw-1.4')
-# nltk.download('wordnet')
+nltk.download('stopwords')
+nltk.download('omw-1.4')
+nltk.download('wordnet')
 
 ###########
 max_words = 5000
