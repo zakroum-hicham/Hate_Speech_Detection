@@ -102,6 +102,8 @@ with st.form(key="my_form"):
 
     # Tokenizer
     # Load the tokenizer
+    import os
+    st.write(os.path())
     with open('./pickle/tokenizer.pkl', 'rb') as f:
         tokenizer = pickle.load(f)
 
