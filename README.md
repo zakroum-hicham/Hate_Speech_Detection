@@ -1,4 +1,5 @@
 # Hate_Speech_Detection
+## **Try the model** : https://hate-speech-lstm.streamlit.app/
 ## ---> Hate Speech Detection using Deep Learning(LSTM)
 
 ### 1) model architecture
